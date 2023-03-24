@@ -70,6 +70,7 @@ function App() {
             </IsAnon>
           }
         />
+        <Route path="*" element={<NotFoundPage/>}/>
         <Route path="dashboard/*" element={<Main />} />
       </Routes>
     {/* } */}

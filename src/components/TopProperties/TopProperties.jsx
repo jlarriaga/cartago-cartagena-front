@@ -2,22 +2,22 @@
 
 const callouts = [
   {
-    name: 'Desk and Office',
-    description: 'Work from home accessories',
+    name: '2 BR Apt in Old City Best Location',
+    description: 'Enjoy this apartment in the center of the Old City',
     imageSrc: 'https://images.unsplash.com/photo-1583531352515-8884af319dc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+    imageAlt: '2 BR Apt in Old City Best Location',
     href: '#',
   },
   {
-    name: 'Self-Improvement',
-    description: 'Journals and note-taking',
+    name: 'Charming 3 Bedroom In The Old City',
+    description: 'This newly renovated 3 bedroom apartment is perfect for any vacation',
     imageSrc: 'https://images.unsplash.com/photo-1582642250536-419cfaaef741?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
     imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
     href: '#',
   },
   {
-    name: 'Travel',
-    description: 'Daily commute essentials',
+    name: 'Beautiful 3 Bedroom Old City House',
+    description: 'Located in the heart of the old city of Cartagena de Indias',
     imageSrc: 'https://images.unsplash.com/photo-1536308037887-165852797016?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1126&q=80',
     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
     href: '#',

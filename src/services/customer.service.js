@@ -19,7 +19,9 @@ class CustomerService {
     });
   }
 
-  
+  allCustomers = (requestBody) => {
+    return this.api.get("/customer/all-customers", requestBody);
+  };
 
 }
 

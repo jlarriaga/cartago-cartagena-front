@@ -15,6 +15,9 @@ function Customers(){
 
     return (
         <>
+        <h2 className="mt-4 mb-4 text-left text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+          Customers
+        </h2>
             <CustomerTable customers={customers}/>
         </>
     )

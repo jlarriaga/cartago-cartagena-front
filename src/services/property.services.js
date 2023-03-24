@@ -29,6 +29,10 @@ class PropertyService {
     propertyDetailsArray = (requestBody) => {
     return this.api.get("/get-properties",requestBody);
   };
+
+    allProperties = (requestBody) => {
+    return this.api.get("/property/all-properties", requestBody);
+    };
 }
 
 const propertyService = new PropertyService();

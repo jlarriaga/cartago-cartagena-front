@@ -13,6 +13,7 @@ import NewTrip from "./components/NewTrip/NewTrip";
 import Customers from "./pages/Customers/Customers";
 import TripDetails from "./pages/TripDetails/TripDetails";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import Properties from "./pages/Properties/Properties";
 
 // const user = {
 //   email:"mail@gmail.com",
@@ -39,6 +40,7 @@ function App() {
         <Route path="new-trip" element ={<NewTrip/>}/>
         <Route path="customers" element ={<Customers/>}/>
         <Route path=":id" element={<TripDetails/>}/>
+        <Route path="properties" element={<Properties/>}/>
       </Routes>
      
     </Dashboard>

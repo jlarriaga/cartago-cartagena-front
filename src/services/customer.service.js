@@ -19,10 +19,7 @@ class CustomerService {
     });
   }
 
-  // GET /api/examples
-  getCustomerbyId = async () => {
-    return this.api.get('/api/examples');
-  }
+  
 
 }
 

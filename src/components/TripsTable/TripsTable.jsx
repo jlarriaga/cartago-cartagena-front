@@ -76,7 +76,7 @@ export default function TripTable() {
           <tbody>
             {trips.map((trip, planIdx) => (
               
-              <tr className="hover:bg-slate-50 cursor-pointer" key={planIdx} onClick={() => navigate(`/${trip._id}`)}>
+              <tr className="hover:bg-slate-50 cursor-pointer" key={planIdx} onClick={() => navigate(`/dashboard/${trip._id}`)}>
                 <td
                   className={classNames(
                     planIdx === 0 ? '' : 'border-t border-gray-200',

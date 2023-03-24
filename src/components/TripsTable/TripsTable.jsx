@@ -21,7 +21,7 @@ export default function TripTable() {
     .catch((error)=>console.log(error))
   },[])
 
-  console.log("los trips", trips)
+  
 
   const navigate = useNavigate();
   return (

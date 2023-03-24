@@ -52,7 +52,7 @@ export default function CustomerTable({customers}) {
           </thead>
           <tbody>
             {customers.map((customer, planIdx) => (
-              <tr className="hover:bg-slate-50 cursor-pointer" key={customer.id}>
+              <tr className="hover:bg-slate-50 cursor-pointer" key={planIdx}>
                 <td
                   className={classNames(
                     planIdx === 0 ? '' : 'border-t border-gray-200',

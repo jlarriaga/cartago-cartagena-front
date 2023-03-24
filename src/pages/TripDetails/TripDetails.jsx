@@ -43,7 +43,7 @@ export default function TripDetails() {
         propertyService.propertyDetails({ id })
       );
       const resolvedProperties = await Promise.all(propertiesArray);
-      console.log("resolvedProperties", resolvedProperties);
+      
       setProperties(resolvedProperties);
     } catch (error) {
       console.log("Error getting property details", error);
@@ -52,7 +52,7 @@ export default function TripDetails() {
   const { jsPDF } = require("jspdf")
 
   const generatePDF = () => {
-  console.log("Hola botones")
+  
   const doc = new jsPDF();
   let initialY = 84;
   
@@ -80,15 +80,14 @@ export default function TripDetails() {
 
   useEffect(() => {
     if (tripDetail.foundTrip && tripDetail.foundTrip._properties) {
-      console.log("Trip Details:", tripDetail);
-      console.log("Properties Ids", tripDetail.foundTrip._properties);
+     
       getPropertiesDetails();
     }
   },[tripDetail]);
 
 
   useEffect(() => {
-    console.log("This are the properties", properties);
+    
   }, [properties]);
 
 
@@ -103,16 +102,13 @@ export default function TripDetails() {
         <div className="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
           <div className="mt-2 flex items-center text-sm text-gray-500">
             <BriefcaseIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-            Jose Luis
+            {tripDetail.foundTrip._customer.fullName}
           </div>
           <div className="mt-2 flex items-center text-sm text-gray-500">
             <MapPinIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-            Remote
+            {tripDetail.foundTrip._customer.email}
           </div>
-          <div className="mt-2 flex items-center text-sm text-gray-500">
-            <CurrencyDollarIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-            $120k &ndash; $140k
-          </div>
+          
           <div className="mt-2 flex items-center text-sm text-gray-500">
             <CalendarIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
             {dayjs(tripDetail.foundTrip.checkInDate).format("YYYY-MM-DD")} to {dayjs(tripDetail.foundTrip.checkOutDate).format("YYYY-MM-DD")}

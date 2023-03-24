@@ -29,9 +29,7 @@ function SearchBar() {
     .then((response)=>setProperties(response.data.availableProperties))
     .catch((error)=>console.log(error,"Error en available properties"))
 
-    console.log(`CheckInDate: ${checkinDate}`);
-    console.log(`CheckOutDate: ${checkoutDate}`);
-    console.log(`Guests: ${numOfTravelers}`);
+  
 
   };
 
@@ -44,7 +42,7 @@ function SearchBar() {
       fullName:customerInfo.fullName,
       email:customerInfo.email
     };
-    console.log(tripData)
+    
 
     try {
       
@@ -54,13 +52,13 @@ function SearchBar() {
         'Trip created successfully!',
         'success'
       )
-      console.log("se creo el trip con exito",tripCreated)
+      
 
     } catch (error) {
       console.log("No se creo el trip con exito", error)
     }
   }
-  console.log("Esta es la customerinfo",customerInfo)
+  
   return (
 
     <div>

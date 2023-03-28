@@ -8,6 +8,8 @@ import CreateQuoteModal from "../CreateQuoteModal/CreateQuoteModal";
 import NotPropertiesFound from "../NotPropertiesFound/NotPropertiesFound";
 import propertyService from "../../services/property.services";
 import tripService from "../../services/trip.services";
+import { useNavigate } from "react-router-dom";
+
 const Swal = require('sweetalert2')
 
 
@@ -19,7 +21,7 @@ function SearchBar() {
   const [properties, setProperties] = useState([])
 
   const [customerInfo, setCustomerInfo] = useState({fullName:"", email:""})
-
+  const navigate = useNavigate()
 
 
   const handleSubmit = (e) => {
@@ -34,6 +36,7 @@ function SearchBar() {
   };
 
   const handleCreatePDF = async () => {
+    
     const tripData = {
       checkInDate:checkinDate,
       checkOutDate:checkoutDate,
@@ -52,6 +55,9 @@ function SearchBar() {
         'Trip created successfully!',
         'success'
       )
+      navigate("/dashboard");
+
+
       
 
     } catch (error) {
